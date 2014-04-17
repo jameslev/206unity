@@ -12,7 +12,6 @@ public class choosepartySequence : MonoBehaviour {
 	public int i;
 	public List<GameObject> icons;
 	public Vector2 scrollposition,scroll2;
-	public Texture2D recycle = Resources.Load("textures/recycle") as Texture2D;
 
 	// Use this for initialization
 	void Start () {
@@ -114,7 +113,7 @@ public class choosepartySequence : MonoBehaviour {
 			int[] bannerPosition = {100,200,300,400};
 			GameObject.Find ("okbutton").GetComponent<okayButtonQuality> ().choosepartyS2 = true;
 			scrollposition = GUI.BeginScrollView(new Rect(100, 120, 370, 200), scrollposition, new Rect(0, 0, 820, 500));
-			GUI.Button(new Rect(30, 0, 600, 400), recycle);
+			GUI.Button(new Rect(30, 0, 300, 500), "recycle");
 			GUI.Button(new Rect(30, 100, 300, 50), "Anti-Pollution");
 			GUI.Button(new Rect(30, 200, 300, 50), "Gun Control");
 			GUI.Button(new Rect(30, 300, 300, 50), "Money As Speech");
